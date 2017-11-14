@@ -1,9 +1,9 @@
-#include <string>
-#include <vector>
-#include "email.h"
-
 #ifndef MAILMANAGER_H
 #define MAILMANAGER_H
+
+#include <string>
+#include <vector>
+#include "Lista.h"
 
 using namespace std;
 
@@ -11,8 +11,11 @@ using namespace std;
 class MailManager {
 private:
     // Propiedades y metodos privados de la clase
+    Lista gestor;
 public:
     MailManager();
+
+    ~MailManager();
 
     // Métodos de uso
     void addMail(email m);

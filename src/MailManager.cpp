@@ -3,26 +3,29 @@
 /**
  * Constructor
  */
-MailManager::MailManager() {
 
+
+MailManager::~MailManager() {
+    gestor.vaciar();
 }
 
+MailManager::MailManager() {}
 
 /**
  * Agrega un mail al gestor
  * @param m mail a agregar
  */
 void MailManager::addMail(email m) {
+    gestor.insertar(m);
 
 }
-
 
 /**
  * Elimina un mail del gestor
  * @param id identificador del mail a borrar
  */
 void MailManager::deleteMail(unsigned long id) {
-
+    gestor.remover(id);
 }
 
 

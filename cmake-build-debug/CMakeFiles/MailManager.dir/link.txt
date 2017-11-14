@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/MailManager.dir/src/main.cpp.o CMakeFiles/MailManager.dir/src/MailManager.cpp.o CMakeFiles/MailManager.dir/src/email.cpp.o CMakeFiles/MailManager.dir/src/Lista.cpp.o CMakeFiles/MailManager.dir/src/Nodo.cpp.o  -o MailManager 
