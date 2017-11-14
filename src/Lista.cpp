@@ -163,21 +163,17 @@ void Lista::insertar(email m) {
  */
 
 void Lista::remover(unsigned long int id) {
-    int cont = 0;
     Nodo *aux = inicio;
 
-    if (id == 1) {
-
+    if(aux->getDato().id == id) {
         if (inicio == nullptr)
             throw 1;
-
         inicio = inicio->getNext();
-        delete[] aux;
+        delete aux;
         return;
     }
 
-    while (cont < id - 1 && aux->getNext() != nullptr) {
-        cont++;
+    while (aux->getNext()->getDato().id != id && aux->getNext() != nullptr) {
         aux = aux->getNext();
     }
     if (aux->getNext() == nullptr)
@@ -185,7 +181,7 @@ void Lista::remover(unsigned long int id) {
 
     Nodo *tmp = aux->getNext();
     aux->setNext(tmp->getNext());
-    delete[] tmp;
+    delete tmp;
 }
 
 

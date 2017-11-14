@@ -35,6 +35,12 @@ void MailManager::deleteMail(unsigned long id) {
  */
 vector<email> MailManager::getSortedByDate() {
     vector<email> ret;
+    Nodo *aux = gestor.getInicio();
+    while(aux != nullptr){
+        ret.push_back(aux->getDato());
+        aux = aux->getNext();
+    }
+
     return ret;
 }
 
@@ -48,6 +54,13 @@ vector<email> MailManager::getSortedByDate() {
  */
 vector<email> MailManager::getSortedByDate(string desde, string hasta) {
     vector<email> ret;
+    Nodo *aux = gestor.getInicio();
+    while(aux->getDato().date > hasta)
+        aux = aux->getNext();
+    while(aux->getDato().date >= desde){
+        ret.push_back(aux->getDato());
+        aux = aux->getNext();
+    }
     return ret;
 }
 

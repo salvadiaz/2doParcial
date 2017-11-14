@@ -13,5 +13,33 @@ int main() {
     snail.addMail(pr3);
     snail.addMail(pr4);
 
+    cout<<"Por fecha"<<endl;
+    vector<email> bydate;
+    bydate = snail.getSortedByDate();
+    for(int i = 0; i < bydate.size(); i ++){
+        cout<<bydate[i].subject<<endl;
+        cout<<bydate[i].date<<endl;
+        cout<<bydate[i].id<<endl;
+    }
+    cout<<endl;
+
+    cout<<"Desde, hasta"<<endl;
+    vector<email> fromdateto;
+    fromdateto = snail.getSortedByDate("2017-09-13","2017-11-15");
+    for(int i = 0; i < fromdateto.size(); i ++){
+        cout<<fromdateto[i].subject<<endl;
+        cout<<fromdateto[i].date<<endl;
+    }
+    cout<<endl;
+
+    snail.deleteMail(4);
+    cout<<"Delete"<<endl;
+    bydate = snail.getSortedByDate();
+    for(int i = 0; i < bydate.size(); i ++){
+        cout<<bydate[i].subject<<endl;
+        cout<<bydate[i].date<<endl;
+        cout<<bydate[i].id<<endl;
+    }
+
     return 0;
 }
