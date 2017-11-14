@@ -21,7 +21,15 @@ public:
 //    email(unsigned long id, const string &from, const string &to, const string &date, const string &subject,
 //          const string &content);
     email(){
+
         
+    }
+
+    email(unsigned long id, const string &from, const string &to, const string &date, const string &subject,
+          const string &content) : id(id), from(from), to(to), date(date), subject(subject), content(content) {}
+
+    virtual ~email() {
+
     }
 
 //    unsigned long getId() const;

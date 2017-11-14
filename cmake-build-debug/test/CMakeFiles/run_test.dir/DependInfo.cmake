@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/test/CMakeFiles/run_test.dir/__/src/MailManager.cpp.o"
-  "/home/salvadiaz/CLionProjects/2doParcial/test/tests.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/test/CMakeFiles/run_test.dir/tests.cpp.o"
+  "C:/Users/PC/Desktop/2doParcial/src/MailManager.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/test/CMakeFiles/run_test.dir/__/src/MailManager.cpp.obj"
+  "C:/Users/PC/Desktop/2doParcial/test/tests.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/test/CMakeFiles/run_test.dir/tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

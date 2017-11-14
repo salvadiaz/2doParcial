@@ -95,10 +95,18 @@ void Lista::insertar(email m) {
     if (esVacia()) {
         Nodo *nn = new Nodo(m, inicio, id);
         inicio = nn;
+        id++;
         return;
     }
 
-    while (aux->getDato().date > m.date && aux != nullptr) {
+    if (m.date > inicio->getDato().date) {
+        Nodo *nn = new Nodo(m, aux, id);
+        id++;
+        inicio = nn;
+        return;
+    }
+
+    while (aux->getNext() != nullptr && m.date < aux->getNext()->getDato().date) {
 
         aux = aux->getNext();
     }
@@ -106,9 +114,12 @@ void Lista::insertar(email m) {
     if (aux == nullptr)
         throw 1;
 
-    Nodo *nn = new Nodo(m, aux->getNext(), id);
-    id++;
-    aux->setNext(nn);
+
+    else {
+        Nodo *nn = new Nodo(m, aux->getNext(), id);
+        id++;
+        aux->setNext(nn);
+    }
 }
 
 
@@ -234,7 +245,7 @@ void Lista::vaciar() {
     while (aux != nullptr) {
         borr = aux;
         aux = aux->getNext();
-        delete[] borr;
+        delete borr;
     }
     inicio = nullptr;
 }

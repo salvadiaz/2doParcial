@@ -6,49 +6,49 @@
 
 #IncludeRegexTransform: 
 
-/home/salvadiaz/CLionProjects/2doParcial/src/Lista.cpp
+C:/Users/PC/Desktop/2doParcial/src/Lista.cpp
 Lista.h
-/home/salvadiaz/CLionProjects/2doParcial/src/Lista.h
+C:/Users/PC/Desktop/2doParcial/src/Lista.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/Lista.h
+C:/Users/PC/Desktop/2doParcial/src/Lista.h
 Nodo.h
-/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.h
+C:/Users/PC/Desktop/2doParcial/src/Nodo.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.cpp
+C:/Users/PC/Desktop/2doParcial/src/MailManager.cpp
 MailManager.h
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.h
+C:/Users/PC/Desktop/2doParcial/src/MailManager.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.h
+C:/Users/PC/Desktop/2doParcial/src/MailManager.h
 string
 -
 vector
 -
 Lista.h
-/home/salvadiaz/CLionProjects/2doParcial/src/Lista.h
+C:/Users/PC/Desktop/2doParcial/src/Lista.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.cpp
+C:/Users/PC/Desktop/2doParcial/src/Nodo.cpp
 Nodo.h
-/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.h
+C:/Users/PC/Desktop/2doParcial/src/Nodo.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.h
+C:/Users/PC/Desktop/2doParcial/src/Nodo.h
 iostream
 -
 email.h
-/home/salvadiaz/CLionProjects/2doParcial/src/email.h
+C:/Users/PC/Desktop/2doParcial/src/email.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/email.cpp
+C:/Users/PC/Desktop/2doParcial/src/email.cpp
 email.h
-/home/salvadiaz/CLionProjects/2doParcial/src/email.h
+C:/Users/PC/Desktop/2doParcial/src/email.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/email.h
+C:/Users/PC/Desktop/2doParcial/src/email.h
 string
 -
 iostream
 -
 
-/home/salvadiaz/CLionProjects/2doParcial/src/main.cpp
+C:/Users/PC/Desktop/2doParcial/src/main.cpp
 iostream
 -
 MailManager.h
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.h
+C:/Users/PC/Desktop/2doParcial/src/MailManager.h
 

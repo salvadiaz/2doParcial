@@ -28,3 +28,7 @@ Nodo *Nodo::getNext(){
 void Nodo::setNext(Nodo *n){
     next = n;
 }
+
+Nodo::~Nodo() {
+
+}

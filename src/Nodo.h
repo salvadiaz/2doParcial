@@ -18,6 +18,8 @@ private:
 public:
     Nodo();
 
+    virtual ~Nodo();
+
     Nodo(email d, Nodo *n, unsigned long int id);
 
     email getDato();

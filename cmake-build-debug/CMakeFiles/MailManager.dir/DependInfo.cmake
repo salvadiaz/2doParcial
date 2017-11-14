@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/salvadiaz/CLionProjects/2doParcial/src/Lista.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/Lista.cpp.o"
-  "/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/MailManager.cpp.o"
-  "/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/Nodo.cpp.o"
-  "/home/salvadiaz/CLionProjects/2doParcial/src/email.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/email.cpp.o"
-  "/home/salvadiaz/CLionProjects/2doParcial/src/main.cpp" "/home/salvadiaz/CLionProjects/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/main.cpp.o"
+  "C:/Users/PC/Desktop/2doParcial/src/Lista.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/Lista.cpp.obj"
+  "C:/Users/PC/Desktop/2doParcial/src/MailManager.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/MailManager.cpp.obj"
+  "C:/Users/PC/Desktop/2doParcial/src/Nodo.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/Nodo.cpp.obj"
+  "C:/Users/PC/Desktop/2doParcial/src/email.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/email.cpp.obj"
+  "C:/Users/PC/Desktop/2doParcial/src/main.cpp" "C:/Users/PC/Desktop/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
