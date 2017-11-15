@@ -1,5 +1,6 @@
 #include <iostream>
 #include "MailManager.h"
+using namespace std;
 
 int main() {
 //    std::cout << "Super gestor de mails" << std::endl;
@@ -75,9 +76,27 @@ int main() {
 //    }
 //    cout<<endl;
 
+    vector<email> bydate;
+    vector<email> fromdateto;
+    vector<email> byfrom;
+    string remitente;
+    vector<email> getByFrom;
+    string palabra;
+    vector<email> query;
+    unsigned long int id;
+    std::cout << "SUPER GESTOR DE MAILS" << std::endl;
+    cout <<endl;
+    email pr(15, "Susana", "Mirta", "2017-11-14", "Prueba", "Este es un mail de prueba");
+    email pr2(16, "Carlos", "Mirta", "2017-11-24", "Prueba2", "Me gusta el cereal");
+    email pr3(17, "Patricia", "Mirta", "2017-09-14", "Prueba3", "Lorem ipsum");
+    email pr4(18, "Carlos", "Mirta", "2016-11-14", "Prueba4", "Un dinosaurio ? Vivo?");
     MailManager snail;
+    snail.addMail(pr);
+    snail.addMail(pr2);
+    snail.addMail(pr3);
+    snail.addMail(pr4);
     int s;
-    cout<<"Bienvenido a su casilla de corres, que desea hacer:"<<endl;
+    cout<<"Bienvenido a su casilla de correos, que desea hacer:"<<endl;
     do{
         cout<<"SELECCIONE LO QUE DESEA HACER"<<endl;
         cout<<endl;
@@ -90,103 +109,122 @@ int main() {
         cout<<"6- Borrar mail"<<endl;
         cout<<"0- Salir"<<endl;
         cin>>s;
-        system("cls");
+        //system("CLS");
+
+
+
 
         switch (s) {
 
-            case 1:
-                cout << "Por fecha" << endl;
-                vector<email> bydate;
+            case 1: {
+                cout << "Por fecha:" << endl;
+                cout <<endl;
                 bydate = snail.getSortedByDate();
                 for (int i = 0; i < bydate.size(); i++) {
-                    cout << "De: " << bydate[i].to << endl;
-                    cout << "Para: " << bydate[i].from << endl;
+                    cout << "De: " << bydate[i].from << endl;
+                    cout << "Para: " << bydate[i].to << endl;
                     cout << "Asunto: " << bydate[i].subject << endl;
-                    cout << "Fecha" << bydate[i].date << endl;
+                    cout << "Fecha: " << bydate[i].date << endl;
                     cout << "Id: " << bydate[i].id << endl;
                     cout << bydate[i].content << endl;
+                    cout <<"----------------------------------------"<< endl;
                 }
-                cout << endl;
-                break;
 
-            case 2:
+                break;
+            }
+
+            case 2: {
                 string desde, hasta;
-                cout << "Ingrese una fecha de inicio" << endl;
-                getline(desde);
-                cout << "Ingrese una fecha de finalización" << endl;
-                getline(hasta);
-                cout << "Desde " << desde << " hasta" << hasta << endl;
-                vector<email> fromdateto;
-                fromdateto = snail.getSortedByDate("2017-09-13", "2017-11-15");
+                do {
+                    cout << "Ingrese una fecha de inicio (AAAA-MM--DD)" << endl;
+                    cin >> desde;
+                    cout << "Ingrese una fecha de finalización (AAAA-MM-DD)" << endl;
+                    cin >> hasta;
+                    cout << "Desde " << desde << ", hasta " << hasta << endl;
+                    cout << endl;
+                }while (desde > hasta);
+
+                fromdateto = snail.getSortedByDate(desde, hasta);
                 for (int i = 0; i < fromdateto.size(); i++) {
-                    cout << "De: " << fromdateto[i].to << endl;
-                    cout << "Para: " << fromdateto[i].from << endl;
+                    cout << "De: " << fromdateto[i].from << endl;
+                    cout << "Para: " << fromdateto[i].to << endl;
                     cout << "Asunto: " << fromdateto[i].subject << endl;
-                    cout << "Fecha" << fromdateto[i].date << endl;
+                    cout << "Fecha: " << fromdateto[i].date << endl;
                     cout << "Id: " << fromdateto[i].id << endl;
                     cout << fromdateto[i].content << endl;
+                    cout << "--------------------------------------------"<<endl;
                 }
-                cout << endl;
-                break;
 
-            case 3:
-                cout << "Por remitente" << endl;
-                vector<email> byfrom;
+                break;
+            }
+
+            case 3: {
+                cout << "Por remitente:" << endl;
+                cout <<endl;
                 byfrom = snail.getSortedByFrom();
                 for (int i = 0; i < byfrom.size(); i++) {
-                    cout << "De: " << byfrom[i].to << endl;
-                    cout << "Para: " << byfrom[i].from << endl;
+                    cout << "De: " << byfrom[i].from << endl;
+                    cout << "Para: " << byfrom[i].to << endl;
                     cout << "Asunto: " << byfrom[i].subject << endl;
-                    cout << "Fecha" << byfrom[i].date << endl;
+                    cout << "Fecha: " << byfrom[i].date << endl;
                     cout << "Id: " << byfrom[i].id << endl;
                     cout << byfrom[i].content << endl;
+                    cout <<"----------------------------------------"<<endl;
                 }
                 break;
+            }
 
-            case 4:
-                string remitente;
+            case 4: {
+
                 cout << "Ingrese un remitente" << endl;
-                getline(remitente);
-                vector<email> getByFrom;
+                cin >> remitente;
+
                 getByFrom = snail.getByFrom(remitente);
                 for (int i = 0; i < getByFrom.size(); i++) {
-                    cout << "De: " << getByFrom[i].to << endl;
-                    cout << "Para: " << getByFrom[i].from << endl;
+                    cout << "De: " << getByFrom[i].from << endl;
+                    cout << "Para: " << getByFrom[i].to << endl;
                     cout << "Asunto: " << getByFrom[i].subject << endl;
-                    cout << "Fecha" << getByFrom[i].date << endl;
+                    cout << "Fecha: " << getByFrom[i].date << endl;
                     cout << "Id: " << getByFrom[i].id << endl;
                     cout << getByFrom[i].content << endl;
+                    cout <<"-----------------------------------------"<<endl;
                 }
                 break;
+            }
 
-            case 5:
-                string palabra;
+            case 5: {
+
                 cout << "Ingrese una palabra" << endl;
-                getline(palabra);
-                vector<email> query;
-                query = snail.getByQuery(query);
+                cin >> palabra;
+                query = snail.getByQuery(palabra);
                 for (int i = 0; i < query.size(); i++) {
-                    cout << "De: " << query[i].to << endl;
-                    cout << "Para: " << query[i].from << endl;
+                    cout << "De: " << query[i].from << endl;
+                    cout << "Para: " << query[i].to << endl;
                     cout << "Asunto: " << query[i].subject << endl;
-                    cout << "Fecha" << query[i].date << endl;
+                    cout << "Fecha: " << query[i].date << endl;
                     cout << "Id: " << query[i].id << endl;
                     cout << query[i].content << endl;
+                    cout <<"-----------------------------------------"<<endl;
                 }
 
                 break;
+            }
 
-            case 6:
-                unsigned long int id;
+            case 6: {
+
                 cout << "Ingrese un id" << endl;
                 cin >> id;
                 snail.deleteMail(id);
 
                 break;
-
-            case 0;
             }
-        }while (s != 0 && (s>=1 && s<=6);
+
+            case 0:
+                break;
+
+            default: cout<<"Error 404 NF"<<endl;
+            }
+        }while (s != 0 && (s>=1 && s<=6));
 
     return 0;
 }

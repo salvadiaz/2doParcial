@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/PC/Desktop/2doParcial/test
+# Install script for directory: /home/salvadiaz/Escritorio/2doParcial/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/MailManager")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,9 +27,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/PC/Desktop/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/cmake_install.cmake")
+  include("/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/cmake_install.cmake")
 
 endif()
 

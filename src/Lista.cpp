@@ -197,6 +197,7 @@ void Lista::remover(unsigned long int id) {
 
 void Lista::removerFrom(unsigned long int id) {
     Nodo *aux = iniciofrom;
+    bool flag = true;
 
     if(aux->getDato().id == id) {
         if (iniciofrom == nullptr)
@@ -206,11 +207,18 @@ void Lista::removerFrom(unsigned long int id) {
         return;
     }
 
-    while (aux->getNext()->getDato().id != id && aux->getNext() != nullptr) {
-        aux = aux->getNext();
+    while (flag && aux->getNext() != nullptr) {
+        flag = false;
+        if(aux->getNext()->getDato().id != id) {
+            aux = aux->getNext();
+            flag = true;
+        }
     }
-    if (aux->getNext() == nullptr)
-        throw 1;
+    if (aux->getNext() == nullptr){
+        cout<<"No existe"<<endl;
+//        throw 1;
+        return;
+    }
 
     Nodo *tmp = aux->getNext();
     aux->setNext(tmp->getNext());
@@ -219,6 +227,7 @@ void Lista::removerFrom(unsigned long int id) {
 
 void Lista::removerDate(unsigned long int id) {
     Nodo *aux = iniciodate;
+    bool flag = true;
 
     if(aux->getDato().id == id) {
         if (iniciodate == nullptr)
@@ -228,11 +237,18 @@ void Lista::removerDate(unsigned long int id) {
         return;
     }
 
-    while (aux->getNext()->getDato().id != id && aux->getNext() != nullptr) {
-        aux = aux->getNext();
+    while (flag && aux->getNext() != nullptr) {
+        flag = false;
+        if (aux->getNext()->getDato().id != id) {
+            aux = aux->getNext();
+            flag = true;
+        }
     }
-    if (aux->getNext() == nullptr)
-        throw 1;
+    if (aux->getNext() == nullptr) {
+        cout << "No existe" << endl;
+//      throw 1;
+        return;
+    }
 
     Nodo *tmp = aux->getNext();
     aux->setNext(tmp->getNext());

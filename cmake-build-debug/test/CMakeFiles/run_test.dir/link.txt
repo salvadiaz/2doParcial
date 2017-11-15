@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\run_test.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\run_test.dir/objects.a @CMakeFiles\run_test.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\run_test.dir/objects.a -Wl,--no-whole-archive  -o run_test.exe -Wl,--out-implib,librun_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\run_test.dir\linklibs.rsp
+/usr/bin/c++  -g   CMakeFiles/run_test.dir/tests.cpp.o CMakeFiles/run_test.dir/__/src/MailManager.cpp.o  -o run_test lib/gtest-1.8.0/libgtest.a lib/gtest-1.8.0/libgtest_main.a -lgcov lib/gtest-1.8.0/libgtest.a -lpthread 

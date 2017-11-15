@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\MailManager.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\MailManager.dir/objects.a @CMakeFiles\MailManager.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\MailManager.dir/objects.a -Wl,--no-whole-archive  -o MailManager.exe -Wl,--out-implib,libMailManager.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MailManager.dir\linklibs.rsp
+/usr/bin/c++  -g   CMakeFiles/MailManager.dir/src/main.cpp.o CMakeFiles/MailManager.dir/src/MailManager.cpp.o CMakeFiles/MailManager.dir/src/email.cpp.o CMakeFiles/MailManager.dir/src/Lista.cpp.o CMakeFiles/MailManager.dir/src/Nodo.cpp.o  -o MailManager 

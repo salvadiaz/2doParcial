@@ -2,7 +2,6 @@
 #define MAILMANAGER_H
 
 #include <fstream>
-#include <string>
 #include <vector>
 #include "Lista.h"
 

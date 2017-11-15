@@ -6,53 +6,51 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/PC/Desktop/2doParcial/src/Lista.cpp
+/home/salvadiaz/Escritorio/2doParcial/src/Lista.cpp
 Lista.h
-C:/Users/PC/Desktop/2doParcial/src/Lista.h
+/home/salvadiaz/Escritorio/2doParcial/src/Lista.h
 
-C:/Users/PC/Desktop/2doParcial/src/Lista.h
+/home/salvadiaz/Escritorio/2doParcial/src/Lista.h
 Nodo.h
-C:/Users/PC/Desktop/2doParcial/src/Nodo.h
+/home/salvadiaz/Escritorio/2doParcial/src/Nodo.h
 
-C:/Users/PC/Desktop/2doParcial/src/MailManager.cpp
+/home/salvadiaz/Escritorio/2doParcial/src/MailManager.cpp
 cstring
 -
 MailManager.h
-C:/Users/PC/Desktop/2doParcial/src/MailManager.h
+/home/salvadiaz/Escritorio/2doParcial/src/MailManager.h
 
-C:/Users/PC/Desktop/2doParcial/src/MailManager.h
+/home/salvadiaz/Escritorio/2doParcial/src/MailManager.h
 fstream
--
-string
 -
 vector
 -
 Lista.h
-C:/Users/PC/Desktop/2doParcial/src/Lista.h
+/home/salvadiaz/Escritorio/2doParcial/src/Lista.h
 
-C:/Users/PC/Desktop/2doParcial/src/Nodo.cpp
+/home/salvadiaz/Escritorio/2doParcial/src/Nodo.cpp
 Nodo.h
-C:/Users/PC/Desktop/2doParcial/src/Nodo.h
+/home/salvadiaz/Escritorio/2doParcial/src/Nodo.h
 
-C:/Users/PC/Desktop/2doParcial/src/Nodo.h
+/home/salvadiaz/Escritorio/2doParcial/src/Nodo.h
 iostream
 -
 email.h
-C:/Users/PC/Desktop/2doParcial/src/email.h
+/home/salvadiaz/Escritorio/2doParcial/src/email.h
 
-C:/Users/PC/Desktop/2doParcial/src/email.cpp
+/home/salvadiaz/Escritorio/2doParcial/src/email.cpp
 email.h
-C:/Users/PC/Desktop/2doParcial/src/email.h
+/home/salvadiaz/Escritorio/2doParcial/src/email.h
 
-C:/Users/PC/Desktop/2doParcial/src/email.h
+/home/salvadiaz/Escritorio/2doParcial/src/email.h
 string
 -
 iostream
 -
 
-C:/Users/PC/Desktop/2doParcial/src/main.cpp
+/home/salvadiaz/Escritorio/2doParcial/src/main.cpp
 iostream
 -
 MailManager.h
-C:/Users/PC/Desktop/2doParcial/src/MailManager.h
+/home/salvadiaz/Escritorio/2doParcial/src/MailManager.h
 

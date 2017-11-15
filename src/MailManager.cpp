@@ -62,6 +62,9 @@ vector<email> MailManager::getSortedByDate(string desde, string hasta) {
         ret.push_back(aux->getDato());
         aux = aux->getNext();
     }
+    if (ret.size() == 0)
+        cout<<"No hay mails entre esas fechas."<<endl;
+
     return ret;
 }
 
@@ -91,12 +94,21 @@ vector<email> MailManager::getSortedByFrom() {
 vector<email> MailManager::getByFrom(string from) {
     vector<email> ret;
     Nodo *aux = gestor.getInicioFrom();
-    while(mayus(aux->getDato().from) != mayus(from))
+    bool flag = true;
+    from = mayus(from);
+    while(mayus(aux->getDato().from) != from && aux->getNext() != nullptr)
         aux = aux->getNext();
-    while(mayus(aux->getDato().from) == mayus(from)){
-        ret.push_back(aux->getDato());
-        aux = aux->getNext();
+    while(aux != nullptr && flag){
+        flag = false;
+        if(mayus(aux->getDato().from) == from) {
+            ret.push_back(aux->getDato());
+            aux = aux->getNext();
+            flag = true;
+        }
     }
+    if(ret.size() == 0)
+        cout<<"El remitente no existe."<<endl;
+
     return ret;
 }
 
@@ -152,6 +164,9 @@ vector<email> MailManager::getByQuery(string query) {
         }
         aux = aux->getNext();
     }
+    if (ret.size() == 0)
+        cout<<"No se ha encontrado ningun mail con ese contenido."<<endl;
+
     return ret;
 }
 
