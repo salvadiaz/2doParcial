@@ -266,3 +266,33 @@ void Lista::vaciar() {
 Nodo* Lista::getInicio() {
     return inicio;
 }
+
+Lista Lista::getSortedByFrom() {
+    Nodo *aux = inicio;
+
+    Lista byfrom;
+
+    do {
+        if (esVacia()) {
+            throw 1;
+        }
+
+        if (aux->getDato().from < byfrom.inicio->getDato().from) {
+            Nodo *nn = new Nodo(aux->getDato(), byfrom.inicio);
+            byfrom.inicio = nn;
+        }
+
+        else {
+            Nodo *tmp = byfrom.inicio;
+            while (aux->getNext() != nullptr && aux->getDato().from < tmp->getNext()->getDato().from) {
+
+                tmp = tmp->getNext();
+            }
+            Nodo *nn = new Nodo(aux->getDato(), tmp->getNext());
+            tmp->setNext(nn);
+        }
+
+        aux = aux->getNext();
+
+    }while(aux =! nullptr);
+}

@@ -47,6 +47,8 @@ public:
 //    void insertAfter2(email, int, email);
 
     Nodo *getInicio();
+
+    Lista getSortedByFrom();
 };
 
 

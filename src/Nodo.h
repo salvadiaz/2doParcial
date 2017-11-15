@@ -22,6 +22,8 @@ public:
 
     Nodo(email d, Nodo *n, unsigned long int id);
 
+    Nodo(email d, Nodo *n);
+
     email getDato();
 
     void setDato(email d);

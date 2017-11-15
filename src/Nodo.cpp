@@ -13,6 +13,11 @@ dato.id = id;
 next = n;
 }
 
+Nodo::Nodo(email d, Nodo *n){
+    dato = d;
+    next = n;
+}
+
 email Nodo::getDato(){
     return dato;
 }

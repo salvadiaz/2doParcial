@@ -71,6 +71,10 @@ vector<email> MailManager::getSortedByDate(string desde, string hasta) {
  */
 vector<email> MailManager::getSortedByFrom() {
     vector<email> ret;
+
+    Lista byfrom;
+    byfrom = gestor.getSortedByFrom();
+
     return ret;
 }
 
