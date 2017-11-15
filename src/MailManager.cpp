@@ -113,7 +113,7 @@ vector<email> MailManager::getByQuery(string query) {
     bool flag = false;
     query = mayus(query);
     Nodo *aux = gestor.getInicioDate();
-    int position, position2;
+
 
     while (aux != nullptr) {
         for (int i = 0; i < aux->getDato().subject.size(); i++) {
@@ -121,7 +121,8 @@ vector<email> MailManager::getByQuery(string query) {
                 line += aux->getDato().subject[i];
                 i++;
             }
-            if (mayus(line) == query) {
+            line = mayus(line);
+            if (line == query) {
                 ret.push_back(aux->getDato());
                 flag = true;
                 i = aux->getDato().subject.size();
@@ -134,11 +135,12 @@ vector<email> MailManager::getByQuery(string query) {
         }
         if (!flag) {
             for (int i = 0; i < aux->getDato().content.size(); i++) {
-                while (aux->getDato().content[i] != '\0' && aux->getDato().content[i] != '\n') {
+                while (aux->getDato().content[i] != ' ' && aux->getDato().content[i] != '\t' && aux->getDato().content[i] != '\0' && aux->getDato().content[i] != '\v' && aux->getDato().content[i] != '\f' && aux->getDato().content[i] != '\r' && aux->getDato().content[i] != '\n') {
                     line += aux->getDato().content[i];
                     i++;
                 }
-                if (mayus(line) == query) {
+                line = mayus(line);
+                if (line == query) {
                     ret.push_back(aux->getDato());
                     i = aux->getDato().content[i];
                 }
