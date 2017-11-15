@@ -186,7 +186,7 @@ Seguramente si algún linuxero se puede acercar lo descula en el momento.
 >> [...]
 >>     Amigos,
 >>>>     Hace un par de semanas con la Iesi fuimos para San Antonio de Arredondo,
->>     a la escuela nueva, a trabajar con Gabi en el inicio de ChakanaLibre.
+>>     a la escuela nueva, a trabajar con Gabi en el iniciodate de ChakanaLibre.
 >>     Armamos juntos los aparatos y antenas, dejamos montado el enlace entre
 >>     la escuela y la casa de Gabi (2.8Km), pero quedó faltando instalar un
 >>     cable desde el puerto LAN del inyector PoE que alimenta el nodo de la

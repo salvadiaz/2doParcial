@@ -35,7 +35,7 @@ void MailManager::deleteMail(unsigned long id) {
  */
 vector<email> MailManager::getSortedByDate() {
     vector<email> ret;
-    Nodo *aux = gestor.getInicio();
+    Nodo *aux = gestor.getInicioDate();
     while(aux != nullptr){
         ret.push_back(aux->getDato());
         aux = aux->getNext();
@@ -54,7 +54,7 @@ vector<email> MailManager::getSortedByDate() {
  */
 vector<email> MailManager::getSortedByDate(string desde, string hasta) {
     vector<email> ret;
-    Nodo *aux = gestor.getInicio();
+    Nodo *aux = gestor.getInicioDate();
     while(aux->getDato().date > hasta)
         aux = aux->getNext();
     while(aux->getDato().date >= desde){
@@ -72,8 +72,11 @@ vector<email> MailManager::getSortedByDate(string desde, string hasta) {
 vector<email> MailManager::getSortedByFrom() {
     vector<email> ret;
 
-    Lista byfrom;
-    byfrom = gestor.getSortedByFrom();
+    Nodo *aux = gestor.getInicioFrom();
+    while(aux != nullptr){
+        ret.push_back(aux->getDato());
+        aux = aux->getNext();
+    }
 
     return ret;
 }
@@ -86,6 +89,13 @@ vector<email> MailManager::getSortedByFrom() {
  */
 vector<email> MailManager::getByFrom(string from) {
     vector<email> ret;
+    Nodo *aux = gestor.getInicioFrom();
+    while(mayus(aux->getDato().from) != mayus(from))
+        aux = aux->getNext();
+    while(mayus(aux->getDato().from) == mayus(from)){
+        ret.push_back(aux->getDato());
+        aux = aux->getNext();
+    }
     return ret;
 }
 
@@ -99,4 +109,11 @@ vector<email> MailManager::getByFrom(string from) {
 vector<email> MailManager::getByQuery(string query) {
     vector<email> ret;
     return ret;
+}
+
+string MailManager::mayus(string ss) {
+    string tmp;
+    for (char s : ss)
+        tmp += toupper(s);
+    return tmp;
 }

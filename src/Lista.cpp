@@ -10,8 +10,10 @@
  */
 
 Lista::Lista() {
-    inicio = nullptr;
+    iniciodate = nullptr;
+    iniciofrom = nullptr;
     id = 1;
+
 }
 
 
@@ -21,23 +23,23 @@ Lista::Lista() {
  * @param li
  */
 
-Lista::Lista(const Lista &li) {
-    inicio = nullptr;
-    Nodo *auxli = li.inicio;
-    if (auxli == nullptr)
-        return;
-
-    Nodo *auxnn = inicio = new Nodo(auxli->getDato(), nullptr, auxli->getDato().id);
-//    Nodo *auxnn = inicio;
-    auxli = auxli->getNext();
-
-    while (auxli != nullptr) {
-        auxnn->setNext(new Nodo(auxli->getDato(), nullptr, auxli->getDato().id));
-
-        auxnn = auxnn->getNext(); // auxnn = newNode;
-        auxli = auxli->getNext();
-    }
-}
+//Lista::Lista(const Lista &li) {
+//    iniciodate = nullptr;
+//    Nodo *auxli = li.iniciodate;
+//    if (auxli == nullptr)
+//        return;
+//
+//    Nodo *auxnn = iniciodate = new Nodo(auxli->getDato(), nullptr, auxli->getDato().id);
+////    Nodo *auxnn = iniciodate;
+//    auxli = auxli->getNext();
+//
+//    while (auxli != nullptr) {
+//        auxnn->setNext(new Nodo(auxli->getDato(), nullptr, auxli->getDato().id));
+//
+//        auxnn = auxnn->getNext(); // auxnn = newNode;
+//        auxli = auxli->getNext();
+//    }
+//}
 
 
 /**
@@ -58,7 +60,8 @@ Lista::~Lista() {
  */
 
 bool Lista::esVacia() {
-    return inicio == nullptr;
+        return iniciodate == nullptr || iniciofrom == nullptr;
+
 }
 
 
@@ -69,7 +72,7 @@ bool Lista::esVacia() {
  */
 
 int Lista::getTamanio() {
-    Nodo *aux = inicio;
+    Nodo *aux = iniciodate;
     int cont = 0;
 
     while (aux != nullptr) {
@@ -90,38 +93,63 @@ int Lista::getTamanio() {
 
 void Lista::insertar(email m) {
 
-    Nodo *aux = inicio;
-
-    if (esVacia()) {
-        Nodo *nn = new Nodo(m, inicio, id);
-        inicio = nn;
-        id++;
-        return;
-    }
-
-    if (m.date > inicio->getDato().date) {
-        Nodo *nn = new Nodo(m, aux, id);
-        id++;
-        inicio = nn;
-        return;
-    }
-
-    while (aux->getNext() != nullptr && m.date < aux->getNext()->getDato().date) {
-
-        aux = aux->getNext();
-    }
-
-    if (aux == nullptr)
-        throw 1;
-
-
-    else {
-        Nodo *nn = new Nodo(m, aux->getNext(), id);
-        id++;
-        aux->setNext(nn);
-    }
+    insertaDate(m, id);
+    insertaFrom(m, id);
+    id++;
 }
 
+void Lista::insertaDate(email m, unsigned long int iddate){
+    Nodo *auxdate = iniciodate;
+
+    if (esVacia()) {
+        Nodo *nn = new Nodo(m, iniciodate, iddate);
+        iniciodate = nn;
+        return;
+    }
+
+    if (m.date > iniciodate->getDato().date) {
+        Nodo *nn = new Nodo(m, auxdate, iddate);
+        iniciodate = nn;
+        return;
+    }
+
+    while (auxdate->getNext() != nullptr && m.date < auxdate->getNext()->getDato().date) {
+
+        auxdate = auxdate->getNext();
+    }
+
+    if (auxdate == nullptr)
+        throw 1;
+
+    Nodo *nn = new Nodo(m, auxdate->getNext(), iddate);
+    auxdate->setNext(nn);
+}
+
+void Lista::insertaFrom(email m, unsigned long int idfrom){
+    Nodo *auxfrom = iniciofrom;
+
+    if (esVacia()) {
+        Nodo *nn = new Nodo(m, iniciofrom, idfrom);
+        iniciofrom = nn;
+        return;
+    }
+
+    if (m.from < iniciofrom->getDato().from) {
+        Nodo *nn = new Nodo(m, auxfrom, idfrom);
+        iniciofrom = nn;
+        return;
+    }
+
+    while (auxfrom->getNext() != nullptr && m.from > auxfrom->getNext()->getDato().from) {
+        auxfrom = auxfrom->getNext();
+    }
+
+    if (auxfrom == nullptr)
+        throw 1;
+
+    Nodo *nn = new Nodo(m, auxfrom->getNext(), idfrom);
+    auxfrom->setNext(nn);
+}
 
 /**
  * Inserta un nodo con el dato en la primera posicion
@@ -130,8 +158,8 @@ void Lista::insertar(email m) {
  */
 
 //void Lista::insertarPrimero(email dato) {
-//    Nodo *nn = new Nodo (dato, inicio, id);
-//    inicio = nn;
+//    Nodo *nn = new Nodo (dato, iniciodate, iddate);
+//    iniciodate = nn;
 //}
 
 
@@ -142,12 +170,12 @@ void Lista::insertar(email m) {
  */
 //template<class T>
 //void Lista<T>::insertarUltimo(T dato) {
-//    if (NULL == inicio) {
-//        inicio = new Nodo<T>(dato, NULL);
+//    if (NULL == iniciodate) {
+//        iniciodate = new Nodo<T>(dato, NULL);
 //        return;
 //    }
 //
-//    Nodo<T> *aux = inicio;
+//    Nodo<T> *aux = iniciodate;
 //    while (aux->getNext() != NULL) {
 //        aux = aux->getNext();
 //    }
@@ -163,12 +191,12 @@ void Lista::insertar(email m) {
  */
 
 void Lista::remover(unsigned long int id) {
-    Nodo *aux = inicio;
+    Nodo *aux = iniciodate;
 
     if(aux->getDato().id == id) {
-        if (inicio == nullptr)
+        if (iniciodate == nullptr)
             throw 1;
-        inicio = inicio->getNext();
+        iniciodate = iniciodate->getNext();
         delete aux;
         return;
     }
@@ -194,7 +222,7 @@ void Lista::remover(unsigned long int id) {
 
 email Lista::getDato(int pos) {
     int i = 0;
-    Nodo *aux = inicio;
+    Nodo *aux = iniciodate;
     while (i < pos && aux != nullptr) {
         aux = aux->getNext();
         i++;
@@ -216,7 +244,7 @@ email Lista::getDato(int pos) {
 
 //void Lista::reemplazar(int pos, email dato) {
 //    int i = 0;
-//    Nodo *aux = inicio;
+//    Nodo *aux = iniciodate;
 //    while (i < pos && aux != NULL) {
 //        aux = aux->getNext();
 //        i++;
@@ -236,20 +264,20 @@ email Lista::getDato(int pos) {
 
 void Lista::vaciar() {
     Nodo *borr;
-    Nodo *aux = inicio;
+    Nodo *aux = iniciodate;
 
     while (aux != nullptr) {
         borr = aux;
         aux = aux->getNext();
         delete borr;
     }
-    inicio = nullptr;
+    iniciodate = nullptr;
 }
 
 
 //void Lista::insertAfter2(email oldValue, int n, email newValue) {
 //    int cont = 0;
-//    Nodo *aux = inicio;
+//    Nodo *aux = iniciodate;
 //    while (NULL != aux) {
 //        if (aux->getDato() == oldValue) {
 //            cont++;
@@ -263,36 +291,13 @@ void Lista::vaciar() {
 //    }
 //}
 
-Nodo* Lista::getInicio() {
-    return inicio;
+Nodo* Lista::getInicioDate() {
+    return iniciodate;
 }
 
-Lista Lista::getSortedByFrom() {
-    Nodo *aux = inicio;
-
-    Lista byfrom;
-
-    do {
-        if (esVacia()) {
-            throw 1;
-        }
-
-        if (aux->getDato().from < byfrom.inicio->getDato().from) {
-            Nodo *nn = new Nodo(aux->getDato(), byfrom.inicio);
-            byfrom.inicio = nn;
-        }
-
-        else {
-            Nodo *tmp = byfrom.inicio;
-            while (aux->getNext() != nullptr && aux->getDato().from < tmp->getNext()->getDato().from) {
-
-                tmp = tmp->getNext();
-            }
-            Nodo *nn = new Nodo(aux->getDato(), tmp->getNext());
-            tmp->setNext(nn);
-        }
-
-        aux = aux->getNext();
-
-    }while(aux =! nullptr);
+Nodo* Lista::getInicioFrom() {
+    return iniciofrom;
 }
+
+
+

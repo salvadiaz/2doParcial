@@ -18,7 +18,7 @@ public:
     string subject;
     string content;
 
-//    email(unsigned long id, const string &from, const string &to, const string &date, const string &subject,
+//    email(unsigned long iddate, const string &from, const string &to, const string &date, const string &subject,
 //          const string &content);
     email(){
 
@@ -34,7 +34,7 @@ public:
 
 //    unsigned long getId() const;
 //
-//    void setId(unsigned long id);
+//    void setId(unsigned long iddate);
 //
 //    const string &getFrom() const;
 //

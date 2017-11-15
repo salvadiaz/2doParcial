@@ -31,6 +31,8 @@ public:
     vector<email> getByFrom(string from);
 
     vector<email> getByQuery(string query);
+
+    string mayus(string ss);
 };
 
 

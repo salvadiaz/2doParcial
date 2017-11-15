@@ -17,12 +17,14 @@
 
 class Lista {
 private:
-    Nodo *inicio;
+    Nodo *iniciodate;
+    Nodo *iniciofrom;
     unsigned long int id;
+
 public:
     Lista();
 
-    Lista(const Lista &li);
+//    Lista(const Lista &li);
 
     ~Lista();
 
@@ -31,6 +33,10 @@ public:
     int getTamanio();
 
     void insertar(email m);
+
+    void insertaDate(email m, unsigned long int id);
+
+    void insertaFrom(email m, unsigned long int id);
 
     //void insertarPrimero(email dato);
 
@@ -46,9 +52,9 @@ public:
 
 //    void insertAfter2(email, int, email);
 
-    Nodo *getInicio();
+    Nodo *getInicioDate();
 
-    Lista getSortedByFrom();
+    Nodo *getInicioFrom();
 };
 
 

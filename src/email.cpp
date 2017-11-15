@@ -1,10 +1,10 @@
 #include "email.h"
 
-//email::email(unsigned long id, const string &from, const string &to, const string &date, const string &subject,
-//             const string &content) : id(id), from(from), to(to), date(date), subject(subject), content(content) {}
+//email::email(unsigned long iddate, const string &from, const string &to, const string &date, const string &subject,
+//             const string &content) : iddate(iddate), from(from), to(to), date(date), subject(subject), content(content) {}
 
-//void email::setId(unsigned long id) {
-//    email::id = id;
+//void email::setId(unsigned long iddate) {
+//    email::iddate = iddate;
 //}
 //
 //const string &email::getFrom() const {

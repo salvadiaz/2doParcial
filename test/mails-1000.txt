@@ -186,7 +186,7 @@ Seguramente si algún linuxero se puede acercar lo descula en el momento.
 >> [...]
 >>     Amigos,
 >>>>     Hace un par de semanas con la Iesi fuimos para San Antonio de Arredondo,
->>     a la escuela nueva, a trabajar con Gabi en el inicio de ChakanaLibre.
+>>     a la escuela nueva, a trabajar con Gabi en el iniciodate de ChakanaLibre.
 >>     Armamos juntos los aparatos y antenas, dejamos montado el enlace entre
 >>     la escuela y la casa de Gabi (2.8Km), pero quedó faltando instalar un
 >>     cable desde el puerto LAN del inyector PoE que alimenta el nodo de la
@@ -6044,7 +6044,7 @@ El 04/11/13 19:18, Dionisio E Alonso (Baco) escribió:
 ja, qué loco. Nunca me imaginé que alguien quisiera saltear el paso de
 cambiar el nombre de usuario por defecto. Ese "wizard" lo agregamos
 nosotros justamente para que los chicos tengan una forma simple
-establecer su nombre de usuario desde el inicio.
+establecer su nombre de usuario desde el iniciodate.
 Esto es importante por ej. para usar Epoptes, o cualquier sistema que
 use auto-descubrimiento de compus, usuarios y servicios.
 
@@ -12346,37 +12346,37 @@ MCALDENTEY@mincyt.gob.ar
 
 Original message headers:
 Received: from mail1.mincyt.gob.ar (192.168.120.197) by
- SVGLHC002.MINCYT.GOB.AR (192.168.120.105) with Microsoft SMTP Server (TLS) id
+ SVGLHC002.MINCYT.GOB.AR (192.168.120.105) with Microsoft SMTP Server (TLS) iddate
  14.2.318.4; Mon, 6 Jan 2014 14:58:31 -0300
 Received: from delfin.secyt.gov.ar (168.83.9.40) by mail1.mincyt.gob.ar
- (192.168.120.197) with Microsoft SMTP Server id 14.2.318.4; Mon, 6 Jan 2014
+ (192.168.120.197) with Microsoft SMTP Server iddate 14.2.318.4; Mon, 6 Jan 2014
  14:58:28 -0300
 Received: from goku.mincyt.gov.ar (goku.mincyt.gob.ar [200.9.244.13])   by
- delfin.secyt.gov.ar (8.13.8/8.13.8) with ESMTP id s06HxX6m028108       for
+ delfin.secyt.gov.ar (8.13.8/8.13.8) with ESMTP iddate s06HxX6m028108       for
  <mcaldent@mincyt.gob.ar>; Mon, 6 Jan 2014 14:59:33 -0300
 Received: from goku.mincyt.gov.ar (localhost [127.0.0.1])       by
- goku.mincyt.gov.ar (8.13.8/linuxconf) with ESMTP id s06HxVsh006740     for
+ goku.mincyt.gov.ar (8.13.8/linuxconf) with ESMTP iddate s06HxVsh006740     for
  <mcaldent@mincyt.gob.ar>; Mon, 6 Jan 2014 14:59:31 -0300
 Received: (from root@localhost) by goku.mincyt.gov.ar (8.13.8/8.13.8/Submit)
- id s06HxVtI006739      for mcaldent@mincyt.gob.ar; Mon, 6 Jan 2014 14:59:31 -0300
+ iddate s06HxVtI006739      for mcaldent@mincyt.gob.ar; Mon, 6 Jan 2014 14:59:31 -0300
 Received: from bulma.mincyt.gob.ar (bulma.mincyt.gob.ar [200.9.244.121] (may
- be forged))    by goku.mincyt.gov.ar (8.13.8/linuxconf) with ESMTP id
+ be forged))    by goku.mincyt.gov.ar (8.13.8/linuxconf) with ESMTP iddate
  s06HxVen006735 for <mcaldent@mincyt.gov.ar>; Mon, 6 Jan 2014 14:59:31 -0300
 Received: from mx.grulic.org.ar (mx.grulic.org.ar [200.16.16.20])       by
- bulma.mincyt.gob.ar (8.13.8/8.13.8) with ESMTP id s06HxOSu026867       for
+ bulma.mincyt.gob.ar (8.13.8/8.13.8) with ESMTP iddate s06HxOSu026867       for
  <mcaldent@mincyt.gov.ar>; Mon, 6 Jan 2014 14:59:24 -0300
 Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])        by
- mx.grulic.org.ar (Postfix) with ESMTP id 6FA0C35A35B;  Mon,  6 Jan 2014
+ mx.grulic.org.ar (Postfix) with ESMTP iddate 6FA0C35A35B;  Mon,  6 Jan 2014
  14:59:44 -0300 (ART)
 X-Original-To: grulic@grulic.org.ar
 Delivered-To: grulic@grulic.org.ar
 Received: from mail-wi0-f179.google.com (mail-wi0-f179.google.com
-        [209.85.212.179])       by mx.grulic.org.ar (Postfix) with ESMTPS id 6615935A332
+        [209.85.212.179])       by mx.grulic.org.ar (Postfix) with ESMTPS iddate 6615935A332
         for <grulic@grulic.org.ar>; Mon,  6 Jan 2014 14:59:35 -0300 (ART)
-Received: by mail-wi0-f179.google.com with SMTP id z2so3131946wiv.12    for
+Received: by mail-wi0-f179.google.com with SMTP iddate z2so3131946wiv.12    for
  <grulic@grulic.org.ar>; Mon, 06 Jan 2014 09:58:03 -0800 (PST)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
-        h=mime-version:sender:in-reply-to:references:from:date:message-id
+        h=mime-version:sender:in-reply-to:references:from:date:message-iddate
         :subject:to:content-type:content-transfer-encoding;
         bh=LR61ktAlpA9OOBL7piWXViywMcxj/8GCc9T+yXZ1FSY=;
         b=iYiFzLESKm5ZWl6DJNwKNkEqRJ2E/xgEVW05uUQGIGEXM+xHiZxUHn6bMvBw7Sq4uF
@@ -12385,7 +12385,7 @@ DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
         QCs0nj1mSTR2U4Clv8fSMqv71xL2pf1CCCeIEhgxhlrmOR+zxTEHZ9rE21FYaR2pz0bS
         HorWp193pIwhyeb9KbBmQtde5iFRHJGTQIcQrTCBJJiRHX+ERA17dsQ1E0uy+5Uj+C5D
         /8aA==
-X-Received: by 10.194.89.97 with SMTP id bn1mr71983538wjb.18.1389031083621;
+X-Received: by 10.194.89.97 with SMTP iddate bn1mr71983538wjb.18.1389031083621;
         Mon, 06 Jan 2014 09:58:03 -0800 (PST)
 MIME-Version: 1.0
 Received: by 10.227.77.198 with HTTP; Mon, 6 Jan 2014 09:57:42 -0800 (PST)
@@ -14031,7 +14031,7 @@ Hola, hay decodificadores satelitales que trabajan con Linux, por lo que
 la placa sintonizadora tiene que tener los drivers, y son placas que 
 sintonizan HD, como este:
 
-http://optibox.cc/?q=product&id=202
+http://optibox.cc/?q=product&iddate=202
 
 No dice que placa usa, pero capas que si les preguntas te lo dicen.
 
@@ -15425,7 +15425,7 @@ El 02/03/14 17:40, LibreBase escribió:
 Esto implicaría tener que optar por uno de los siguientes escenarios, 
 ¿correcto?
 
-a) Dar inicio a la primera instalación guiada a las 11 (o 12 hs., no sé 
+a) Dar iniciodate a la primera instalación guiada a las 11 (o 12 hs., no sé
 cómo llegamos con el tiempo para cortar para almorzar)
 
 b) Hacer el evento solo por la tarde (¿con posible impacto negativo a 
@@ -15493,7 +15493,7 @@ El día 2 de marzo de 2014, 21:26, Maximiliano Giraldes
 > Esto implicaría tener que optar por uno de los siguientes escenarios,
 > ¿correcto?
 >
-> a) Dar inicio a la primera instalación guiada a las 11 (o 12 hs., no sé cómo
+> a) Dar iniciodate a la primera instalación guiada a las 11 (o 12 hs., no sé cómo
 > llegamos con el tiempo para cortar para almorzar)
 >
 > b) Hacer el evento solo por la tarde (¿con posible impacto negativo a nivel
@@ -15521,7 +15521,7 @@ sugiero hacer un pedido de reserva lo mismo, como para estar en lista
 de espera), hay que pensar en alternativas como sugiere Maxi, en
 cuanto a ellas:
 
-a) Dar inicio a la primera instalación guiada a las 11 (o 12 hs., no
+a) Dar iniciodate a la primera instalación guiada a las 11 (o 12 hs., no
 sé cómo llegamos con el tiempo para cortar para almorzar)
 
 Historicamente los Install Fest eran a las 14 y nos reuniamos a las 10
@@ -15923,7 +15923,7 @@ El 04/03/14 13:23, Roberto Cattaneo escribió:
 > de espera), hay que pensar en alternativas como sugiere Maxi, en
 > cuanto a ellas:
 >
-> a) Dar inicio a la primera instalación guiada a las 11 (o 12 hs., no
+> a) Dar iniciodate a la primera instalación guiada a las 11 (o 12 hs., no
 > sé cómo llegamos con el tiempo para cortar para almorzar)
 >
 > Historicamente los Install Fest eran a las 14 y nos reuniamos a las 10
@@ -21015,7 +21015,7 @@ from: tavochi---@gmail.com
 to: grulic@grulic.org.ar
 subject:  Re: [GrULiC] hardaware no x86
 Esta opción esta interesante y también trae Sata.
-http://openhacks.com/page/productos/id/482/title/CubieBoard-Kit#.UzLj5IX6NBk
+http://openhacks.com/page/productos/iddate/482/title/CubieBoard-Kit#.UzLj5IX6NBk
 
 Este proveedor tiene de todo al estilo Raspberry, Cubieboard, Bagleboard,
 Arduino. Es de Rosario.
@@ -40249,7 +40249,7 @@ En realidad el Trac es el sistema que tenemos para la
 organización/coordinación de tareas de Librebase. Todos los que están 
 involucrados en tareas o proyectos de Librebase pueden solicitar una 
 cuenta en el Trac. No es público por esa razón y así lo decidimos al 
-inicio de Librebase.
+iniciodate de Librebase.
 
 Para la faz pública de Librebase, coincido con Seba: tenemos el sitio 
 web y lo que se desee publicar en el Owncloud (permite modo privado y 
@@ -42339,7 +42339,7 @@ Hola Seba.
 
 Pude hacer que me reconozca los discos el gparted y hacer un espacio para
 el ubuntu, lo instalé y funcionó genial.
-Pero el grub no me reconoció la partición de inicio de windows 8, reinicié
+Pero el grub no me reconoció la partición de iniciodate de windows 8, reinicié
 en el modo UEFI y el w8 está intacto =).
 Por cuestiones de tiempo anoche no pude corregir ese tema, pero ya falta
 menos.....

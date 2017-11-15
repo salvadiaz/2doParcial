@@ -40,6 +40,28 @@ int main() {
         cout<<bydate[i].date<<endl;
         cout<<bydate[i].id<<endl;
     }
+    cout<<endl;
+
+    cout<<"sortedByFrom"<<endl;
+    vector<email> byfrom;
+    byfrom = snail.getSortedByFrom();
+    for(int i = 0; i < byfrom.size(); i++){
+        cout<<byfrom[i].from<<endl;
+        cout<<byfrom[i].subject<<endl;
+        cout<<byfrom[i].date<<endl;
+        cout<<byfrom[i].id<<endl;
+    }
+    cout<<endl;
+
+    cout<<"GetByFrom"<<endl;
+    vector<email> getByFrom;
+    getByFrom = snail.getByFrom("patricia");
+    for (int i = 0; i < getByFrom.size(); i++) {
+        cout<<getByFrom[i].from<<endl;
+        cout<<getByFrom[i].subject<<endl;
+        cout<<getByFrom[i].date<<endl;
+        cout<<getByFrom[i].id<<endl;
+    }
 
     return 0;
 }
