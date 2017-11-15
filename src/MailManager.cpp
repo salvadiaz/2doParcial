@@ -135,7 +135,7 @@ vector<email> MailManager::getByQuery(string query) {
             }
             line = mayus(line);
             if (line == query) {
-                ret.push_back(aux->getDato());
+               // ret.push_back(aux->getDato());
                 flag = true;
                 i = aux->getDato().subject.size();
 
@@ -153,7 +153,7 @@ vector<email> MailManager::getByQuery(string query) {
                 }
                 line = mayus(line);
                 if (line == query) {
-                    ret.push_back(aux->getDato());
+                    //ret.push_back(aux->getDato());
                     i = aux->getDato().content[i];
                 }
                 else{

@@ -278,43 +278,55 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/salvadiaz/CLionProjects/2doParcial/src/Lista.h
-Nodo.h
-/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.h
-
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.cpp
-MailManager.h
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.h
-
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.h
-string
--
-vector
--
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Lista.cpp
 Lista.h
-/home/salvadiaz/CLionProjects/2doParcial/src/Lista.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Lista.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/Nodo.h
-iostream
--
-email.h
-/home/salvadiaz/CLionProjects/2doParcial/src/email.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Lista.h
+Nodo.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Nodo.h
 
-/home/salvadiaz/CLionProjects/2doParcial/src/email.h
-string
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/MailManager.cpp
+cstring
 -
-iostream
--
+MailManager.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/MailManager.h
 
-/home/salvadiaz/CLionProjects/2doParcial/test/tests.cpp
-gtest/gtest.h
-/home/salvadiaz/CLionProjects/2doParcial/test/gtest/gtest.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/MailManager.h
 fstream
 -
 vector
 -
+Lista.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Lista.h
+
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Nodo.cpp
+Nodo.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Nodo.h
+
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Nodo.h
+iostream
+-
+email.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/email.h
+
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/email.cpp
+email.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/email.h
+
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/email.h
+string
+-
+iostream
+-
+
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/test/tests.cpp
+gtest/gtest.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/test/gtest/gtest.h
+fstream
+-
 ../src/email.h
-/home/salvadiaz/CLionProjects/2doParcial/src/email.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/email.h
 ../src/MailManager.h
-/home/salvadiaz/CLionProjects/2doParcial/src/MailManager.h
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/MailManager.h
 

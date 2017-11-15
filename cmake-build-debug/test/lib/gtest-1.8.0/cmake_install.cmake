@@ -1,4 +1,4 @@
-# Install script for directory: /home/salvadiaz/Escritorio/2doParcial/test/lib/gtest-1.8.0
+# Install script for directory: /home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/test/lib/gtest-1.8.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,18 +29,18 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/libgtest.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/libgtest.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/libgtest_main.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/libgtest_main.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/salvadiaz/Escritorio/2doParcial/test/lib/gtest-1.8.0/include/gtest")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/test/lib/gtest-1.8.0/include/gtest")
 endif()
 

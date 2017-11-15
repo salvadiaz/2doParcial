@@ -1,4 +1,4 @@
-# Install script for directory: /home/salvadiaz/Escritorio/2doParcial/test
+# Install script for directory: /home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,12 +29,12 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/cmake_install.cmake")
+  include("/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/cmake_install.cmake")
 
 endif()
 

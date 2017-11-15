@@ -1,22 +1,22 @@
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/install/local.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/install.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/list_install_components.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/install/strip.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/install/local.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/install.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/list_install_components.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/edit_cache.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/CMakeFiles/run_test.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/install/strip.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/install/local.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/install.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/list_install_components.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/edit_cache.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest_main.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/rebuild_cache.dir
-/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/install/local.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/install.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/MailManager.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/install/strip.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/install/local.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/install.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/list_install_components.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/CMakeFiles/run_test.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/install/strip.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/install/local.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/install.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/list_install_components.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/edit_cache.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest_main.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/rebuild_cache.dir
+/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/test/lib/gtest-1.8.0/CMakeFiles/gtest.dir

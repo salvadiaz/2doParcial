@@ -2,6 +2,8 @@
 #include "MailManager.h"
 using namespace std;
 
+vector<email> load_mm(string archivo);
+
 int main() {
 //    std::cout << "Super gestor de mails" << std::endl;
 //    email pr(15, "Susana", "Mirta", "2017-11-14", "Prueba", "Este es un mail de prueba");
@@ -85,16 +87,26 @@ int main() {
     vector<email> query;
     unsigned long int id;
     std::cout << "SUPER GESTOR DE MAILS" << std::endl;
-    cout <<endl;
-    email pr(15, "Susana", "Mirta", "2017-11-14", "Prueba", "Este es un mail de prueba");
-    email pr2(16, "Carlos", "Mirta", "2017-11-24", "Prueba2", "Me gusta el cereal");
-    email pr3(17, "Patricia", "Mirta", "2017-09-14", "Prueba3", "Lorem ipsum");
-    email pr4(18, "Carlos", "Mirta", "2016-11-14", "Prueba4", "Un dinosaurio ? Vivo?");
+//    cout <<endl;
+//    email pr(15, "Susana", "Mirta", "2017-11-14", "Prueba", "Este es un mail de prueba");
+//    email pr2(16, "Carlos", "Mirta", "2017-11-24", "Prueba2", "Me gusta el cereal");
+//    email pr3(17, "Patricia", "Mirta", "2017-09-14", "Prueba3", "Lorem ipsum");
+//    email pr4(18, "Carlos", "Mirta", "2016-11-14", "Prueba4", "Un dinosaurio ? Vivo?");
     MailManager snail;
-    snail.addMail(pr);
-    snail.addMail(pr2);
-    snail.addMail(pr3);
-    snail.addMail(pr4);
+
+
+    vector<email> mails;
+    mails = load_mm("../test/mails-6517.txt");
+
+    for (auto const &m: mails) {
+        snail.addMail(m);
+    }
+
+
+//    snail.addMail(pr);
+//    snail.addMail(pr2);
+//    snail.addMail(pr3);
+//    snail.addMail(pr4);
     int s;
     cout<<"Bienvenido a su casilla de correos, que desea hacer:"<<endl;
     do{
@@ -126,7 +138,7 @@ int main() {
                     cout << "Asunto: " << bydate[i].subject << endl;
                     cout << "Fecha: " << bydate[i].date << endl;
                     cout << "Id: " << bydate[i].id << endl;
-                    cout << bydate[i].content << endl;
+                   // cout << bydate[i].content << endl;
                     cout <<"----------------------------------------"<< endl;
                 }
 
@@ -151,7 +163,7 @@ int main() {
                     cout << "Asunto: " << fromdateto[i].subject << endl;
                     cout << "Fecha: " << fromdateto[i].date << endl;
                     cout << "Id: " << fromdateto[i].id << endl;
-                    cout << fromdateto[i].content << endl;
+                    //cout << fromdateto[i].content << endl;
                     cout << "--------------------------------------------"<<endl;
                 }
 
@@ -168,7 +180,7 @@ int main() {
                     cout << "Asunto: " << byfrom[i].subject << endl;
                     cout << "Fecha: " << byfrom[i].date << endl;
                     cout << "Id: " << byfrom[i].id << endl;
-                    cout << byfrom[i].content << endl;
+                   // cout << byfrom[i].content << endl;
                     cout <<"----------------------------------------"<<endl;
                 }
                 break;
@@ -186,7 +198,7 @@ int main() {
                     cout << "Asunto: " << getByFrom[i].subject << endl;
                     cout << "Fecha: " << getByFrom[i].date << endl;
                     cout << "Id: " << getByFrom[i].id << endl;
-                    cout << getByFrom[i].content << endl;
+                   // cout << getByFrom[i].content << endl;
                     cout <<"-----------------------------------------"<<endl;
                 }
                 break;
@@ -203,7 +215,7 @@ int main() {
                     cout << "Asunto: " << query[i].subject << endl;
                     cout << "Fecha: " << query[i].date << endl;
                     cout << "Id: " << query[i].id << endl;
-                    cout << query[i].content << endl;
+                  //  cout << query[i].content << endl;
                     cout <<"-----------------------------------------"<<endl;
                 }
 
@@ -227,4 +239,65 @@ int main() {
         }while (s != 0 && (s>=1 && s<=6));
 
     return 0;
+}
+
+
+vector<string> split(const string &s, char delim) {
+    vector<std::string> elems;
+    unsigned long pos = s.find(delim);
+    if (pos == string::npos)
+        elems.push_back(s);
+    else {
+        elems.push_back(s.substr(0, pos));
+        elems.push_back(s.substr(pos + 1, string::npos));
+    }
+    return elems;
+}
+
+string trim(string &str) {
+    size_t first = str.find_first_not_of(' ');
+    if (first == string::npos)
+        return "";
+    size_t last = str.find_last_not_of(' ');
+    return str.substr(first, (last - first + 1));
+}
+
+vector<email> load_mm(string archivo) {
+    string line;
+    vector<email> mails;
+    ifstream miArchivo(archivo);
+    unsigned long indice = 0;
+    vector<string> campos;
+    email *mail = NULL;
+
+    if (miArchivo.is_open()) {
+        try {
+            while (getline(miArchivo, line)) {
+                campos = split(line, ':');
+                if (campos.size() > 0) { // Es un dato completo
+                    if (campos[0] == "-.-.-") {
+                        if (mail != NULL)
+                            mails.push_back(*mail);
+                        mail = new email();
+                        mail->id = indice++;
+                        mail->content = "";
+                    } else if (campos[0] == "date") {
+                        mail->date = trim(campos[1]);
+                    } else if (campos[0] == "from") {
+                        mail->from = trim(campos[1]);
+                    } else if (campos[0] == "to") {
+                        mail->to = trim(campos[1]);
+                    } else if (campos[0] == "subject") {
+                        mail->subject = trim(campos[1]);
+                    } else {
+                        mail->content += line + "\n";
+                    }
+                }
+            }
+        } catch (int e) {
+            cout << "error cargando mail\n";
+        }
+    } else
+        cout << "No se pudo leer el archivo.";
+    return mails;
 }

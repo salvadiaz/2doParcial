@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/salvadiaz/Escritorio/2doParcial/src/Lista.cpp" "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/Lista.cpp.o"
-  "/home/salvadiaz/Escritorio/2doParcial/src/MailManager.cpp" "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/MailManager.cpp.o"
-  "/home/salvadiaz/Escritorio/2doParcial/src/Nodo.cpp" "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/Nodo.cpp.o"
-  "/home/salvadiaz/Escritorio/2doParcial/src/email.cpp" "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/email.cpp.o"
-  "/home/salvadiaz/Escritorio/2doParcial/src/main.cpp" "/home/salvadiaz/Escritorio/2doParcial/cmake-build-debug/CMakeFiles/MailManager.dir/src/main.cpp.o"
+  "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Lista.cpp" "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/MailManager.dir/src/Lista.cpp.o"
+  "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/MailManager.cpp" "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/MailManager.dir/src/MailManager.cpp.o"
+  "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/Nodo.cpp" "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/MailManager.dir/src/Nodo.cpp.o"
+  "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/email.cpp" "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/MailManager.dir/src/email.cpp.o"
+  "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/src/main.cpp" "/home/martin/datos/git/Facultad/UCC/Programacion 3/Entregas/2017/Diaz-Ruiz-Reinosso/cmake-build-debug/CMakeFiles/MailManager.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
