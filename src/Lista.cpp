@@ -191,6 +191,33 @@ void Lista::insertaFrom(email m, unsigned long int idfrom){
  */
 
 void Lista::remover(unsigned long int id) {
+    removerFrom(id);
+    removerDate(id);
+}
+
+void Lista::removerFrom(unsigned long int id) {
+    Nodo *aux = iniciofrom;
+
+    if(aux->getDato().id == id) {
+        if (iniciofrom == nullptr)
+            throw 1;
+        iniciofrom = iniciofrom->getNext();
+        delete aux;
+        return;
+    }
+
+    while (aux->getNext()->getDato().id != id && aux->getNext() != nullptr) {
+        aux = aux->getNext();
+    }
+    if (aux->getNext() == nullptr)
+        throw 1;
+
+    Nodo *tmp = aux->getNext();
+    aux->setNext(tmp->getNext());
+    delete tmp;
+}
+
+void Lista::removerDate(unsigned long int id) {
     Nodo *aux = iniciodate;
 
     if(aux->getDato().id == id) {
@@ -266,12 +293,23 @@ void Lista::vaciar() {
     Nodo *borr;
     Nodo *aux = iniciodate;
 
+
     while (aux != nullptr) {
         borr = aux;
         aux = aux->getNext();
         delete borr;
     }
+
+    aux = iniciofrom;
+
+    while (aux != nullptr) {
+        borr = aux;
+        aux = aux->getNext();
+        delete borr;
+    }
+
     iniciodate = nullptr;
+    iniciofrom = nullptr;
 }
 
 

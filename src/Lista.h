@@ -44,6 +44,10 @@ public:
 
     void remover(unsigned long int id);
 
+    void removerFrom(unsigned long int id);
+
+    void removerDate (unsigned long int id);
+
     email getDato(int pos);
 
 //    void reemplazar(int pos, email dato);

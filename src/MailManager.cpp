@@ -1,3 +1,4 @@
+#include <cstring>
 #include "MailManager.h"
 
 /**
@@ -108,6 +109,47 @@ vector<email> MailManager::getByFrom(string from) {
  */
 vector<email> MailManager::getByQuery(string query) {
     vector<email> ret;
+    string line;
+    bool flag = false;
+    query = mayus(query);
+    Nodo *aux = gestor.getInicioDate();
+    int position, position2;
+
+    while (aux != nullptr) {
+        for (int i = 0; i < aux->getDato().subject.size(); i++) {
+            while (aux->getDato().subject[i] != '\0') {
+                line += aux->getDato().subject[i];
+                i++;
+            }
+            if (mayus(line) == query) {
+                ret.push_back(aux->getDato());
+                flag = true;
+                i = aux->getDato().subject.size();
+
+            }
+            else{
+                line.clear();
+            }
+
+        }
+        if (!flag) {
+            for (int i = 0; i < aux->getDato().content.size(); i++) {
+                while (aux->getDato().content[i] != '\0' && aux->getDato().content[i] != '\n') {
+                    line += aux->getDato().content[i];
+                    i++;
+                }
+                if (mayus(line) == query) {
+                    ret.push_back(aux->getDato());
+                    i = aux->getDato().content[i];
+                }
+                else{
+                    line.clear();
+                }
+            }
+
+        }
+        aux = aux->getNext();
+    }
     return ret;
 }
 
